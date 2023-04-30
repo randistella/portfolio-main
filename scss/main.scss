@@ -51,6 +51,16 @@
             padding: 10px;
             text-align: center;
           }
+    
+    // section three contact
+          .flex-item-contact {
+            height: 450px;
+            width: 650px;
+            background: #f4f4f4;
+            border: #ccc solid 2px;
+            padding: 10px;
+            text-align: center;
+          }
       }
   }
 
@@ -67,7 +77,11 @@
         flex-direction: column;
 
         .flex-item {
-            width: 250px;
+           
+        }
+
+        .flex-item-contact {
+            max-width: 450px;
         }
     }
 }
