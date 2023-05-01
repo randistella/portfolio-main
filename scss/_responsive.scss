@@ -1,0 +1,17 @@
+  // responsive
+  @media only screen and (max-width: 768px) {
+    .flex-nav {
+
+        nav {
+            display: none;
+        }
+    }
+
+    .flex-container {
+        flex-direction: column;
+
+        .headshot {
+            display: none;
+        }
+    }
+}

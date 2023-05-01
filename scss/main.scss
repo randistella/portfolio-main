@@ -1,3 +1,6 @@
+@import 'responsive';
+@import 'utilities';
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -5,7 +8,8 @@
   }
 
   body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Roboto Mono', monospace;
+    background-color: $oxford-blue;
 
     // nav and logo
     .flex-nav {
@@ -51,25 +55,18 @@
             padding: 10px;
             text-align: center;
           }
+
+          .headshot {
+            background: url('/dist/images/headshot.jpg') no-repeat center center / cover;
+        }
     
-    // section three contact    
+    // section three contact
+        form {
+            margin-top: 60px;
+
+            input {
+                font-family: inherit;
+            }
+        }
       }
   }
-
-  // responsive
-@media only screen and (max-width: 768px) {
-    .flex-nav {
-
-        nav {
-            display: none;
-        }
-    }
-
-    .flex-container {
-        flex-direction: column;
-
-        .flex-item {
-           
-        }
-    }
-}
