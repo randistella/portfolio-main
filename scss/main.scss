@@ -8,8 +8,8 @@
   }
 
   body {
-    font-family: 'Roboto Mono', monospace;
-    background-color: $oxford-blue;
+    font-family: Helvetica, sans-serif;
+    background-color: #fff;
 
     // nav and logo
     .flex-nav {
@@ -19,7 +19,7 @@
         padding: 20px 50px;
         
         nav {
-            background: lightblue;
+            background: $isabelline;
         }
 
         #logo {
@@ -47,18 +47,14 @@
         overflow: hidden;
 
         .flex-item {
-            height: 450px;
-            width: 450px;
-            background: #f4f4f4;
+            height: 200px;
+            width: 200px;
+            background: $linen;
             border: #ccc solid 2px;
             margin: 10px;
             padding: 10px;
             text-align: center;
           }
-
-          .headshot {
-            background: url('/dist/images/headshot.jpg') no-repeat center center / cover;
-        }
     
     // section three contact
         form {
