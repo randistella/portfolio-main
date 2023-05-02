@@ -11,6 +11,11 @@
     font-family: 'Work Sans', sans-serif;
     background-color: #fff;
 
+
+    a {
+        text-decoration: none;
+    }
+
     // nav and logo
     .flex-nav {
         display: flex;
@@ -27,10 +32,13 @@
             list-style: none;
             display: inline-block;
             padding: 0 20px;
+            font-size: 16px;
+            color: $silver;
         }
 
-        a {
-            text-decoration: none;
+        a:hover {
+            font-weight: 600;
+            color: $hover-orange;
         }
     }
 
@@ -44,6 +52,21 @@
 
         h4 {
             color: $silver;
+            font-weight: 400;
+
+            .purple {
+                color: $dev-purple;
+                cursor: pointer;
+            }
+
+            .purple:hover, .blue:hover {
+                font-weight: 600;
+            }
+
+            .blue {
+                color: $design-blue;
+                cursor: pointer;
+            }
         }
     }
 
