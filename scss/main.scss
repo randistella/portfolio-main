@@ -8,7 +8,7 @@
   }
 
   body {
-    font-family: Helvetica, sans-serif;
+    font-family: 'Work Sans', sans-serif;
     background-color: #fff;
 
     // nav and logo
@@ -16,11 +16,7 @@
         display: flex;
         justify-content: flex-end;
         align-items: center;
-        padding: 20px 50px;
-        
-        nav {
-            
-        }
+        margin: 40px 40px 0;
 
         #logo {
             margin-right: auto;
@@ -35,7 +31,6 @@
 
         a {
             text-decoration: none;
-            color: $pale-dogwood;
         }
     }
 
@@ -43,12 +38,12 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        height: 80vh;
+        height: 50vh;
+        margin: 0 40px;
         overflow: hidden;
-        flex-wrap: wrap;
 
         h4 {
-            margin: 10px auto;
+            color: $silver;
         }
     }
 
@@ -58,14 +53,32 @@
         justify-content: center;
         overflow: hidden;
         flex-wrap: wrap;
+        margin: 0 30px;
 
         .flex-item {
-            height: 200px;
-            width: 200px;
-            background: $linen;
+            height: 500px;
+            width: 500px;
+            background-color: $isabelline;
             margin: 10px;
             padding: 10px;
             text-align: center;
+            border-radius: 5px;
           }
+    }
+
+    .flex-container-footer {
+        display: flex;
+        margin: 30px 40px 30px;
+        justify-content: flex-end;
+
+
+        i {
+            color: $silver;
+        }
+
+        i:hover {
+            color: $hover-orange;
+            cursor: pointer;
+        }
     }
   }
