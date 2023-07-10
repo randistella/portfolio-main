@@ -42,6 +42,7 @@
         }
     }
 
+// top container
     .flex-container {
         display: flex;
         align-items: center;
@@ -56,20 +57,22 @@
 
             .purple {
                 color: $dev-purple;
-                cursor: pointer;
+                // cursor: pointer;
             }
 
             .purple:hover, .blue:hover {
                 font-weight: 600;
+                font-style: italic;
             }
 
             .blue {
                 color: $design-blue;
-                cursor: pointer;
+                // cursor: pointer;
             }
         }
     }
 
+// portfolio grid
     .flex-container-portfolio {
         display: flex;
         align-items: center;
@@ -79,7 +82,7 @@
         margin: 0 30px;
 
         .flex-item {
-            height: 500px;
+            height: auto;
             width: 500px;
             background-color: $isabelline;
             margin: 10px;
@@ -89,15 +92,30 @@
             overflow: hidden;
           }
 
+          .dev {
+            border: 1.5px $dev-purple solid;
+            
+          }
+
           img {
             display: flex;
             width: 80%;
             align-items: center;
             justify-content: center;
-            margin: 50px auto;
+            margin: 50px auto 30px;
+          }
+
+          .flex-container-portfolio-text {
+            display: flex;
+            flex-direction: column;
+
+            h4, p {
+                font-size: 14px;
+            }
           }
     }
 
+    // footer
     .flex-container-footer {
         display: flex;
         margin: 30px 40px 30px;
